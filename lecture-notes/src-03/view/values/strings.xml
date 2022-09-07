@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TextViewTest</string>
+    <string name="insa">Hello</string>
+    <string name="anyoung">안녕하세요</string>
+</resources>
