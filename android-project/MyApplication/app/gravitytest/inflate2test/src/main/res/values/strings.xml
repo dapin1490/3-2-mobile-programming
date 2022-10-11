@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">inflate2Test</string>
+    <string name="hi">Hello, Android!!!</string>
+</resources>
