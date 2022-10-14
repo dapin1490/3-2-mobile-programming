@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="layout: horizontal1"
+        android:textSize="25dp"
+        android:background="#00FFFF"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/horizonedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여기다 입력"
+            />
+
+        <Button
+            android:id="@+id/horizonbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="입력 완료"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="layout: horizontal2"
+        android:textSize="25dp"
+        android:background="#00FFFF"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/insa"
+            android:textColor="#ff0000"
+            android:textSize="20pt"
+            android:textStyle="italic"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/anyoung"
+            android:textSize="20sp"
+            android:background="#0000ff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Morning"
+            android:textColor="#8000ff00"
+            android:textSize="5mm"
+            android:typeface="serif"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="layout: horizontal3"
+        android:textSize="25dp"
+        android:background="#00FFFF"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insa"
+            android:textColor="#ff0000"
+            android:textSize="20pt"
+            android:textStyle="italic"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anyoung"
+            android:textSize="20sp"
+            android:background="#0000ff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Morning"
+            android:textColor="#8000ff00"
+            android:textSize="5mm"
+            android:typeface="serif"
+            />
+    </LinearLayout>
+
+</LinearLayout>
