@@ -25,8 +25,7 @@ public class MainActivity extends ListActivity {
         edit = findViewById(R.id.edit);
         list = new ArrayList<>();
 
-        adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, list);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
         setListAdapter(adapter);
     }
 

@@ -17,21 +17,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ListView lv = findViewById(R.id.list_item);
-        lv.setAdapter(ArrayAdapter.createFromResource(this,
-                R.array.codes, android.R.layout.simple_list_item_1));
+        lv.setAdapter(ArrayAdapter.createFromResource(this, R.array.codes, android.R.layout.simple_list_item_1));
         lv.setOnItemClickListener(listener);
     }
 
-    AdapterView.OnItemClickListener listener
-            = new AdapterView.OnItemClickListener() {
+    AdapterView.OnItemClickListener listener = new AdapterView.OnItemClickListener() {
         @Override
-        public void onItemClick(AdapterView<?> adapterView,
-                                View view, int i, long l) {
-            String[] codes
-                    = getResources().getStringArray(R.array.codes);
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            String[] codes = getResources().getStringArray(R.array.codes);
             String s = "Select Item = " + codes[i];
-            Toast.makeText(MainActivity.this, s, Toast.LENGTH_SHORT)
-                    .show();
+            Toast.makeText(MainActivity.this, s, Toast.LENGTH_SHORT).show();
         }
     };
 }

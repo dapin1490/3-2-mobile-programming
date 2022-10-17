@@ -22,12 +22,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView lv =  findViewById(R.id.list_item);
-        edit =  findViewById(R.id.edit);
+        ListView lv = findViewById(R.id.list_item);
+        edit = findViewById(R.id.edit);
         list = new ArrayList<>();
 
-        adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, list);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
         lv.setAdapter(adapter);
         lv.setOnItemClickListener((adapterView, view, i, l) -> {
             String s = "Select Item = " + list.get(i);

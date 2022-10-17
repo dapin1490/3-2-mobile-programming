@@ -10,15 +10,12 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
-    static final String[] codes = {
-            "Apple", "Banana", "Cupcake", "Donut", "Eclair", "Froyo"
-    };
+    static final String[] codes = { "Apple", "Banana", "Cupcake", "Donut", "Eclair", "Froyo" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setListAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, codes));
+        setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, codes));
     }
 
     @Override

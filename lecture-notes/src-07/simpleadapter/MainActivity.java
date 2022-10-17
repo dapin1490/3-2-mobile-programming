@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         ListView list = findViewById(R.id.codes);
 
-        ArrayList<HashMap<String, String>> codes
-                = new ArrayList<>();
+        ArrayList<HashMap<String, String>> codes = new ArrayList<>();
 
         HashMap<String, String> map = new HashMap<>();
         map.put("initial", "a");
@@ -36,10 +35,8 @@ public class MainActivity extends AppCompatActivity {
         map.put("code", "Cupcake");
         codes.add(map);
 
-        SimpleAdapter sa
-                = new SimpleAdapter(this, codes, R.layout.row,
-                new String[]{"initial", "code"},
-                new int[]{R.id.initial, R.id.code});
+        SimpleAdapter sa = new SimpleAdapter(this, codes, R.layout.row, new String[] { "initial", "code" },
+                new int[] { R.id.initial, R.id.code });
 
         list.setAdapter(sa);
     }

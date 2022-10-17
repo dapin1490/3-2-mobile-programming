@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
         mi = new MyItem(R.mipmap.ic_launcher, "대우 마티즈");
         arrayList.add(mi);
 
-        MyListAdapter myListAdapter = 
-			new MyListAdapter(this, R.layout.icontext, arrayList);
+        MyListAdapter myListAdapter = new MyListAdapter(this, R.layout.icontext, arrayList);
 
         ListView listView;
         listView = findViewById(R.id.list);

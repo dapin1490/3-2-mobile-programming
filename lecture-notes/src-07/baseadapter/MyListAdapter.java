@@ -16,8 +16,7 @@ public class MyListAdapter extends BaseAdapter {
     int layout;
     ArrayList<MyItem> arrayList;
 
-    public MyListAdapter(Context context, int layout, 
-			ArrayList<MyItem> arrayList) {
+    public MyListAdapter(Context context, int layout, ArrayList<MyItem> arrayList) {
         this.context = context;
         this.layout = layout;
         this.arrayList = arrayList;
