@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "MP Lecture Project"
 include ':app'
 include ':week06note221011'
+include ':week07note221018'
