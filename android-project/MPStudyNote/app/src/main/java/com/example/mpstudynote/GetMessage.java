@@ -1,7 +1,6 @@
 package com.example.mpstudynote;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;

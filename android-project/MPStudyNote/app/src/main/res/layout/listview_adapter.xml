@@ -10,29 +10,17 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/addbtn"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
             android:onClick="onClick"
-            android:text="+" />
-
-        <Button
-            android:id="@+id/delbtn"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:onClick="onClick"
-            android:text="-" />
+            android:text="추가" />
 
         <EditText
-            android:id="@+id/edittext"
-            android:layout_width="0dp"
-            android:layout_weight="6"
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="추가할 내용?" />
+            android:hint="추가할 내용을 입력하세요" />
 
     </LinearLayout>
 
@@ -40,5 +28,4 @@
         android:id="@+id/list_item"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
 </LinearLayout>
