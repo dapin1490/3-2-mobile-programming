@@ -43,13 +43,17 @@ class MyListener implements View.OnClickListener {
 
 	public void onClick(View view) {
 		// 적절한 코드 추가
-		if (flag) {
-			Toast.makeText(maincon,"Hi!", Toast.LENGTH_SHORT).show();
-			flag = !flag;
-		}
-		else {
-			Toast.makeText(maincon,"Bye!", Toast.LENGTH_SHORT).show();
-			flag = !flag;
-		}
+		// if (flag) {
+		// 	Toast.makeText(maincon,"Hi!", Toast.LENGTH_SHORT).show();
+		// 	flag = !flag;
+		// }
+		// else {
+		// 	Toast.makeText(maincon,"Bye!", Toast.LENGTH_SHORT).show();
+		// 	flag = !flag;
+		// }
+
+		// 풀이
+		Toast.makeText(maincon, (flag ? "Hi" : "Bye"), Toast.LENGTH_SHORT).show();
+		flag = !flag;
 	}
 }

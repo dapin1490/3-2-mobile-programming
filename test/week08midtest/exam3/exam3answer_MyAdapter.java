@@ -51,3 +51,60 @@ public class MyAdapter extends BaseAdapter {
 		return convertView;
 	}
 }
+
+/*
+// 풀이
+
+package com.example.week09lecture;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+import java.util.List;
+
+public class MyAdapter extends BaseAdapter {
+    // 코드 추가
+	Context c;
+	List<MyItem> a;
+
+	public MyAdapter(Context c, List<MyItem> a) {
+		this.c = c;
+		this.a = a;
+	}
+
+	@Override
+	public int getCount() {
+		return a.size();
+	}
+
+	@Override
+	public Object getItem(int position) {
+		return a.get(position);
+	}
+
+	@Override
+	public long getItemId(int position) {
+		return position;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		if (convertView == null) {
+			convertView = View.inflate(c, R.layout.row, null);
+		}
+		TextView name = convertView.findViewById(R.id.name);
+		name.setText(a.get(position).name);
+
+		TextView phone = convertView.findViewById(R.id.phone);
+		phone.setText(a.get(position).phone);
+
+		TextView email = convertView.findViewById(R.id.email);
+		email.setText(a.get(position).email);
+
+		return convertView;
+	}
+}
+*/
