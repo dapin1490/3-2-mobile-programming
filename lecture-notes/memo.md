@@ -1,1 +1,2 @@
-src-08 인텐트 기말고사에 꼭 한 문제 나옴
+* src-08 인텐트 기말고사에 꼭 한 문제 나옴
+* 매니페스트 파일에서 `<category android:name="android.intent.category.LAUNCHER" />` : 이것은 혼자서 호출되고 실행될 수 있는 앱이다. 메인 액티비티에만 있고 서브 액티비티에는 이 속성이 없음.
