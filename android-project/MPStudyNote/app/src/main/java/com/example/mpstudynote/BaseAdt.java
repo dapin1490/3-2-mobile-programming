@@ -35,7 +35,7 @@ public class BaseAdt extends AppCompatActivity {
         MyListAdapter MyAdapter = new MyListAdapter(this, R.layout.base_adt_icontext, arItem);
 
         ListView MyList;
-        MyList = (ListView) findViewById(R.id.list);
+        MyList = (ListView) findViewById(R.id.base_adt_list);
         MyList.setAdapter(MyAdapter);
     }
 }
@@ -83,7 +83,7 @@ class MyListAdapter extends BaseAdapter {
         if (convertView == null) {
             convertView = Inflater.inflate(layout, parent, false);
         }
-        ImageView img = (ImageView) convertView.findViewById(R.id.img);
+        ImageView img = (ImageView) convertView.findViewById(R.id.base_adt_img);
         img.setImageResource(arSrc.get(position).icon);
 
         TextView txt = (TextView) convertView.findViewById(R.id.text);

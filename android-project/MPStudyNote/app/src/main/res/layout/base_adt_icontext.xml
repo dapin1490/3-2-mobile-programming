@@ -4,21 +4,21 @@
     android:layout_height="60dip"
     android:padding="5dip">
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/base_adt_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"/>
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/base_adt_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#00ff00"
         android:textSize="26sp"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@id/img"/>
+        android:layout_toRightOf="@id/base_adt_img"/>
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/base_adt_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"

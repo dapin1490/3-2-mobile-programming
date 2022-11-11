@@ -36,18 +36,18 @@ public class ClickEvent01 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.click_event01);
 
-        findViewById(R.id.apple).setOnClickListener(mClickListener);
-        findViewById(R.id.orange).setOnClickListener(mClickListener);
+        findViewById(R.id.click_event_01_apple).setOnClickListener(mClickListener);
+        findViewById(R.id.click_event_01_orange).setOnClickListener(mClickListener);
     }
 
     Button.OnClickListener mClickListener = new View.OnClickListener() {
         public void onClick(View v) {
-            TextView textFruit=(TextView)findViewById(R.id.fruit);
+            TextView textFruit=(TextView)findViewById(R.id.click_event_01_fruit);
             switch (v.getId()) {
-                case R.id.apple:
+                case R.id.click_event_01_apple:
                     textFruit.setText("Apple");
                     break;
-                case R.id.orange:
+                case R.id.click_event_01_orange:
                     textFruit.setText("Orange");
                     break;
             }

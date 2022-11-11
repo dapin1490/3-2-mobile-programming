@@ -11,7 +11,7 @@
         android:layout_weight="1" >
 
         <Button
-            android:id="@+id/btn01"
+            android:id="@+id/w06q_btn01"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
@@ -23,7 +23,7 @@
             android:onClick="onClick"/>
 
         <Button
-            android:id="@+id/btn02"
+            android:id="@+id/w06q_btn02"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
@@ -37,7 +37,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv01"
+        android:id="@+id/w06q_tv01"
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:layout_weight="1"
@@ -48,7 +48,7 @@
         android:textSize="30dp" />
 
     <TextView
-        android:id="@+id/tv02"
+        android:id="@+id/w06q_tv02"
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:layout_weight="1"

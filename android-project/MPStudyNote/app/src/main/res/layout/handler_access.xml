@@ -7,7 +7,7 @@
     android:background="#cccccc"
     >
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/handacc_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="핸들러에서 외부 변수 액세스 테스트"

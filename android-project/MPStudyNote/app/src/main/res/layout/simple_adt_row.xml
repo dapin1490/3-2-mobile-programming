@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <TextView
-        android:id="@+id/initial"
+        android:id="@+id/simple_adt_row_initial"
         android:layout_width="50dip"
         android:layout_height="wrap_content" />
     <TextView
-        android:id="@+id/code"
+        android:id="@+id/simple_adt_row_code"
         android:layout_width="70dip"
         android:layout_height="wrap_content" />
 </LinearLayout>

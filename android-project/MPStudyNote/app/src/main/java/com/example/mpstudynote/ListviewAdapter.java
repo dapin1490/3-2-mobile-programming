@@ -21,8 +21,8 @@ public class ListviewAdapter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview_adapter);
 
-        ListView lv = findViewById(R.id.list_item);
-        edit = findViewById(R.id.edit);
+        ListView lv = findViewById(R.id.listview_adt_list_item);
+        edit = findViewById(R.id.listview_adt_edit);
         list = new ArrayList<>();
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);

@@ -54,7 +54,7 @@ public class HandlerAccess extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.handler_access);
 
-        final TextView outText = (TextView)findViewById(R.id.text);
+        final TextView outText = (TextView)findViewById(R.id.handacc_text);
 
         LinearLayout linear = (LinearLayout)findViewById(R.id.handacc_linear);
         linear.setOnTouchListener(new View.OnTouchListener() {

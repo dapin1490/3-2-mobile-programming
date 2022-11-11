@@ -15,19 +15,19 @@ public class LongClick extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.long_click);
 
-        textCount = findViewById(R.id.count);
+        textCount = findViewById(R.id.long_click_count);
 
-        findViewById(R.id.dec).setOnLongClickListener(listener);
-        findViewById(R.id.inc).setOnLongClickListener(listener);
+        findViewById(R.id.long_click_dec).setOnLongClickListener(listener);
+        findViewById(R.id.long_click_inc).setOnLongClickListener(listener);
     }
 
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.dec:
+            case R.id.long_click_dec:
                 count--;
                 textCount.setText(count + "");
                 break;
-            case R.id.inc:
+            case R.id.long_click_inc:
                 count++;
                 textCount.setText(count + "");
                 break;
@@ -37,11 +37,11 @@ public class LongClick extends AppCompatActivity {
     View.OnLongClickListener listener = new View.OnLongClickListener() {
         public boolean onLongClick(View v) {
             switch (v.getId()) {
-                case R.id.dec:
+                case R.id.long_click_dec:
                     count = 0;
                     textCount.setText("" + count);
                     return true;
-                case R.id.inc:
+                case R.id.long_click_inc:
                     count = 100;
                     textCount.setText("" + count);
                     break;

@@ -15,7 +15,7 @@ public class SimpleAdt extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.simple_adt);
 
-        ListView list = findViewById(R.id.codes);
+        ListView list = findViewById(R.id.simple_adt_codes);
 
         ArrayList<HashMap<String, String>> codes = new ArrayList<>();
 
@@ -34,7 +34,7 @@ public class SimpleAdt extends AppCompatActivity {
         map.put("code", "Cupcake");
         codes.add(map);
 
-        SimpleAdapter sa = new SimpleAdapter(this, codes, R.layout.simple_adt_row, new String[] { "initial", "code" }, new int[] { R.id.initial, R.id.code });
+        SimpleAdapter sa = new SimpleAdapter(this, codes, R.layout.simple_adt_row, new String[] { "initial", "code" }, new int[] { R.id.simple_adt_row_initial, R.id.simple_adt_row_code });
 
         list.setAdapter(sa);
     }

@@ -13,12 +13,12 @@ public class ClickEvent02 extends AppCompatActivity {
     }
 
     public void mOnClick(View v) {
-        TextView textFruit=(TextView)findViewById(R.id.fruit2);
+        TextView textFruit=(TextView)findViewById(R.id.click_event_02_fruit);
         switch (v.getId()) {
-            case R.id.apple2:
+            case R.id.click_event_02_apple:
                 textFruit.setText("Apple");
                 break;
-            case R.id.orange2:
+            case R.id.click_event_02_orange:
                 textFruit.setText("Orange");
                 break;
         }

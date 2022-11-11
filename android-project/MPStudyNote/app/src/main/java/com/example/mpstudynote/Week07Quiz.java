@@ -66,8 +66,8 @@ public class Week07Quiz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.week07_quiz);
 
-        listv = findViewById(R.id.list_item);
-        edit = findViewById(R.id.edittext);
+        listv = findViewById(R.id.w07q_list_item);
+        edit = findViewById(R.id.w07q_edittext);
         arrlist = new ArrayList<>();
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_single_choice, arrlist);
@@ -77,12 +77,12 @@ public class Week07Quiz extends AppCompatActivity {
     }
 
     public void onClick(View v) {
-        if (v.getId() == R.id.addbtn) {
+        if (v.getId() == R.id.w07q_addbtn) {
             String txt = edit.getText().toString();
             if (txt.length() != 0) {
                 arrlist.add(txt);
             }
-        } else if (v.getId() == R.id.delbtn) {
+        } else if (v.getId() == R.id.w07q_delbtn) {
             if (posi != ListView.INVALID_POSITION) {
                 arrlist.remove(posi);
                 listv.clearChoices();

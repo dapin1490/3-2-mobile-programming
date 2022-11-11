@@ -19,15 +19,15 @@ public class Week06Quiz extends AppCompatActivity {
     }
 
     public void onClick(View v) {
-        TextView text01 = (TextView)findViewById(R.id.tv01);
-        TextView text02 = (TextView)findViewById(R.id.tv02);
+        TextView text01 = (TextView)findViewById(R.id.w06q_tv01);
+        TextView text02 = (TextView)findViewById(R.id.w06q_tv02);
 
         switch (v.getId()) {
-            case R.id.btn01:
+            case R.id.w06q_btn01:
                 text01.setBackgroundColor(btnflag01 ? Color.WHITE : Color.GREEN);
                 btnflag01 = !btnflag01;
                 break;
-            case R.id.btn02:
+            case R.id.w06q_btn02:
                 text02.setGravity(btnflag02 ? Gravity.CENTER : Gravity.START);
                 btnflag02 = !btnflag02;
                 break;

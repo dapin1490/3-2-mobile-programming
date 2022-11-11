@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
+    <Button
+        android:id="@+id/go_to_act_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/insa"
-        android:textColor="#ff0000"
-        android:textSize="20pt"
-        android:textStyle="italic"/>
+        android:text="선택한 액티비티로 이동"
+        android:layout_margin="5dp"
+        android:onClick="onClick"/>
 
-    <TextView
+    <ListView
+        android:id="@+id/main_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/anyoung"
-        android:textSize="20sp"
-        android:background="#0000FF"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Good Morning"
-        android:textColor="#8000FF00"
-        android:textSize="5mm"
-        android:typeface="serif"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

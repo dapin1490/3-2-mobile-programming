@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activities">
+        <item>MainActivity</item>
+        <item>Base Adapter</item>
+        <item>Baseline Aligned</item>
+        <item>Button Edit</item>
+        <item>Click Event 01</item>
+        <item>Click Event 02</item>
+        <item>Gravity Layout</item>
+        <item>Handle Event</item>
+        <item>Handler Access</item>
+        <item>Horizontal Layout</item>
+        <item>Imageview</item>
+        <item>Intent main and sub</item>
+        <item>Layout Manage</item>
+        <item>Layout Parameter</item>
+        <item>Layout gravity</item>
+        <item>List Activity Adapter</item>
+        <item>Listview Adapter</item>
+        <item>Long Click</item>
+        <item>Relative Layout</item>
+        <item>Simple Adapter</item>
+        <item>SQLite</item>
+        <item>Toast</item>
+        <item>Week06quiz</item>
+        <item>Week07quiz</item>
+    </string-array>
+</resources>

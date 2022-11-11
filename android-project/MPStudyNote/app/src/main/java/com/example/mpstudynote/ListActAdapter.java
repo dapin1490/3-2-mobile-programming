@@ -20,7 +20,7 @@ public class ListActAdapter extends ListActivity { // 상속받는 라이브러�
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_act_adapter);
 
-        edit = findViewById(R.id.edit);
+        edit = findViewById(R.id.list_act_adt_edit);
         list = new ArrayList<>();
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
@@ -29,10 +29,10 @@ public class ListActAdapter extends ListActivity { // 상속받는 라이브러�
     }
 
     public void onClick(View v) {
-        if (v.getId() == R.id.button1) {
+        if (v.getId() == R.id.list_act_adt_button1) {
             list.add(edit.getText().toString());
             edit.setText("");
-        } else if (v.getId() == R.id.button2)
+        } else if (v.getId() == R.id.list_act_adt_button2)
             if (list.size() > 0)
                 list.remove(list.size() -1);
 

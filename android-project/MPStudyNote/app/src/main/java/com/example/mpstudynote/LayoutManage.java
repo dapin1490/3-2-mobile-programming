@@ -24,13 +24,13 @@ public class LayoutManage extends AppCompatActivity {
         * 객체를 찾은 후 모든 메서드를 호출할 수 있다.
         * 코드의 색상 알파값은 투명(0x00), XML의 색상 알파값은 불투명(0xff)
         */
-        LinearLayout MyLinear=(LinearLayout)findViewById(R.id.mylinear);
+        LinearLayout MyLinear=(LinearLayout)findViewById(R.id.layout_manage_mylinear);
         MyLinear.setOrientation(LinearLayout.HORIZONTAL);
 
-        Button MyBtn = (Button)findViewById(R.id.mybutton);
+        Button MyBtn = (Button)findViewById(R.id.layout_manage_mybutton);
         MyBtn.setTextSize(40);
 
-        EditText MyEdit = (EditText)findViewById(R.id.myedit);
+        EditText MyEdit = (EditText)findViewById(R.id.layout_manage_myedit);
         MyEdit.setBackgroundColor(0xff00ff00);
 
         /*

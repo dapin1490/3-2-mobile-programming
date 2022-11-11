@@ -14,10 +14,10 @@ public class ButtonEdit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.button_edit);
 
-        Button btn = (Button)findViewById(R.id.btn);
+        Button btn = (Button)findViewById(R.id.btn_edit_btn);
         btn.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                EditText edit = (EditText)findViewById(R.id.edit);
+                EditText edit = (EditText)findViewById(R.id.btn_edit_edit);
                 String str = edit.getText().toString();
                 Toast.makeText(ButtonEdit.this, str, Toast.LENGTH_SHORT).show();
             }
