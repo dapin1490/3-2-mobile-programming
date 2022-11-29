@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="layout: nested, table"
+        android:textSize="15dp"
+        android:background="#00FFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="레이아웃 안에 다른 레이아웃을 배치한다."/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#808080">
+            <TableRow>
+                <TextView android:text="국어" android:padding="10dip" />
+                <TextView android:text="영어" android:padding="10dip" />
+                <TextView android:text="수학" android:padding="10dip" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="88" android:padding="10dip" />
+                <TextView android:text="92" android:padding="10dip" />
+                <TextView android:text="76" android:padding="10dip" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="사자"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="호랑이"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="코끼리"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="layout: 코드의 색상 알파값은 투명(0x00), XML의 색상 알파값은 불투명(0xff)"
+        android:textSize="15dp"
+        android:background="#00FFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_manage_mylinear"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <Button
+                android:id="@+id/layout_manage_mybutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="버튼"
+                />
+            <TextView
+                android:id="@+id/layout_manage_mytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="문자열"
+                />
+            <EditText
+                android:id="@+id/layout_manage_myedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="에디트"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="layout: 전개(inflation) : XML 문서의 레이아웃 혹은 뷰로 부터 뷰 객체를 생성하는 동작"
+        android:textSize="15dp"
+        android:background="#00FFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:textSize="20sp"
+                android:text="TextView"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="layout: "
+        android:textSize="15dp"
+        android:background="#00FFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    </LinearLayout>
+    -->
+
+</LinearLayout>

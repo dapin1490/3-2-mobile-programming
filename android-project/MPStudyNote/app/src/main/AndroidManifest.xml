@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MPStudyNote"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BaseAdt"
+            android:exported="false"/>
+        <activity
+            android:name=".BaselineAligned"
+            android:exported="false"/>
+        <activity
+            android:name=".ButtonEdit"
+            android:exported="false"/>
+        <activity
+            android:name=".ClickEvent01"
+            android:exported="false"/>
+        <activity
+            android:name=".ClickEvent02"
+            android:exported="false"/>
+        <activity
+            android:name=".GravityLayout"
+            android:exported="false"/>
+        <activity
+            android:name=".HandleEvent"
+            android:exported="false"/>
+        <activity
+            android:name=".HandlerAccess"
+            android:exported="false"/>
+        <activity
+            android:name=".HorizontalLayout"
+            android:exported="false"/>
+        <activity
+            android:name=".ImageviewTest"
+            android:exported="false"/>
+        <activity
+            android:name=".Intent01"
+            android:exported="false"/>
+        <activity
+            android:name=".LayoutManage"
+            android:exported="false"/>
+        <activity
+            android:name=".LayoutParameter"
+            android:exported="false"/>
+        <activity
+            android:name=".LgravityLayout"
+            android:exported="false"/>
+        <activity
+            android:name=".ListActAdapter"
+            android:exported="false"/>
+        <activity
+            android:name=".ListviewAdapter"
+            android:exported="false"/>
+        <activity
+            android:name=".LongClick"
+            android:exported="false"/>
+        <activity
+            android:name=".RelativeLayout"
+            android:exported="false"/>
+        <activity
+            android:name=".SimpleAdt"
+            android:exported="false"/>
+        <activity
+            android:name=".SQLiteMain"
+            android:exported="false"/>
+        <activity
+            android:name=".ToastTest"
+            android:exported="false"/>
+        <activity
+            android:name=".Week06Quiz"
+            android:exported="false"/>
+        <activity
+            android:name=".Week07Quiz"
+            android:exported="false"/>
+    </application>
+
+</manifest>
