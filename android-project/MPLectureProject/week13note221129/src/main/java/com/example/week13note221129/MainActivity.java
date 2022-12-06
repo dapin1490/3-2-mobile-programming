@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 		ll = findViewById(R.id.ll);
 
 		// 필요한 코드 추가
-		Canvas cvs = new Canvas();
-		RadioGroup rg = findViewById(R.id.group);
-		rg.setOnCheckedChangeListener((group, checkedId) -> {
+		// 교수 답안
+		ll.addView(circle);
+		((RadioGroup)findViewById(R.id.group)).setOnCheckedChangeListener((group, checkedId) -> {
 			switch (checkedId) {
 				case R.id.red:
 					color = Color.RED;
@@ -38,11 +38,28 @@ public class MainActivity extends AppCompatActivity {
 					color = Color.BLUE;
 					break;
 			}
-			circle.draw(cvs);
-			if (ll.getChildCount() > 1) // 이 부분 몰라서 틀림
-				ll.removeView(circle);
-			ll.addView(circle);
+			circle.invalidate(); // 뷰 갱신 : 다시 그림
 		});
+
+//		Canvas cvs = new Canvas();
+//		RadioGroup rg = findViewById(R.id.group);
+//		rg.setOnCheckedChangeListener((group, checkedId) -> {
+//			switch (checkedId) {
+//				case R.id.red:
+//					color = Color.RED;
+//					break;
+//				case R.id.green:
+//					color = Color.GREEN;
+//					break;
+//				case R.id.blue:
+//					color = Color.BLUE;
+//					break;
+//			}
+//			circle.draw(cvs);
+//			if (ll.getChildCount() > 1) // 이 부분 몰라서 틀림
+//				ll.removeView(circle);
+//			ll.addView(circle);
+//		});
 	}
 
 	// Circle 클래스 추가
